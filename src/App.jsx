@@ -16,8 +16,6 @@ import Chance from 'chance';
 const chance = new Chance();
 
 
-
-
 const App = () => {
   const [chatClient, setChatClient] = useState(null);
   const [channel, setChannel] = useState(null);
@@ -34,11 +32,11 @@ const App = () => {
 
       const channel = client.channel(
         'messaging',
-        'stream-chat',
+        'testing-investor-expert-chat',
         {
           image:
             'https://cdn.chrisshort.net/testing-certificate-chains-in-go/GOPHER_MIC_DROP.png',    
-          name: 'stream.io POC',
+          name: 'Testing Expert Investor Chat',
         },
       );
 
